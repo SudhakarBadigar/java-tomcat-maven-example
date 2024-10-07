@@ -15,6 +15,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+        <repository>
+            <id>nexus-id</id>
+            <url>http://18.207.196.211:8090/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-id</id>
+            <url>http://18.207.196.211:8090/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+ 
   <build>
     <finalName>java-tomcat-maven-example</finalName>
     <plugins>
